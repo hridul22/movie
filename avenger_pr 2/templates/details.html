@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block body%}
+<img src="{{avng.img.url}}" width="500" height="300">
+<h6>{{avng.name}}</h6><br>
+<h6>{{avng.decs}}</h6>
+
+<a class="btn btn-warning" href="{% url 'avgapp:update' avng.id %}">UPDATE</a>
+<a class="btn btn-danger" href="{% url 'avgapp:delete' avng.id %}">DELETE</a>
+
+
+
+{% endblock %}
